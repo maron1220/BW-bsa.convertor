@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BW_convertor" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="体表面積(m²)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KdD-16-tdd">
+                                <rect key="frame" x="40" y="159" width="334" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="x8Z-yR-uAw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U19-KW-vfx">
+                                <rect key="frame" x="167" y="299" width="80" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="CyQ-OB-O0r"/>
+                                    <constraint firstAttribute="width" constant="80" id="oV9-j8-wyo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="計算"/>
+                                <connections>
+                                    <action selector="caliculateButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6md-rF-gPH"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="animal" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xLU-YF-9xj">
+                                <rect key="frame" x="70" y="439" width="80" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="4wx-rM-tOb"/>
+                                    <constraint firstAttribute="width" constant="80" id="iwZ-En-E8i"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q4A-f7-cgO">
+                                <rect key="frame" x="0.0" y="489" width="414" height="368"/>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="動物種" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uau-5U-ISn">
+                                <rect key="frame" x="70" y="379" width="80" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="Omd-Y6-LhP"/>
+                                    <constraint firstAttribute="height" constant="50" id="sHy-aB-09G"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="体重(Kg)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pJp-WD-Wyl">
+                                <rect key="frame" x="254" y="379" width="90" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="C9g-Kq-sYB"/>
+                                    <constraint firstAttribute="height" constant="50" id="GLP-Dz-Ckj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="動物種と体重を選んで下さい" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xMs-h3-974">
+                                <rect key="frame" x="0.0" y="44" width="414" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="kB2-Wx-ycT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BW" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="50a-z3-6i7">
+                                <rect key="frame" x="259" y="439" width="80" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="vd1-KV-ZdE"/>
+                                    <constraint firstAttribute="height" constant="50" id="zez-5m-Lvj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="※犬は80Kgまで､猫は8.9Kgまでです" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SpT-vp-tSr">
+                                <rect key="frame" x="0.0" y="84" width="414" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="IpG-6f-4eo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="SpT-vp-tSr" firstAttribute="top" secondItem="xMs-h3-974" secondAttribute="bottom" id="2n8-jE-Q6y"/>
+                            <constraint firstItem="q4A-f7-cgO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="3iY-6F-lXu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xMs-h3-974" secondAttribute="trailing" id="4Hc-WA-OV6"/>
+                            <constraint firstItem="50a-z3-6i7" firstAttribute="centerX" secondItem="pJp-WD-Wyl" secondAttribute="centerX" id="88G-gW-R6R"/>
+                            <constraint firstItem="pJp-WD-Wyl" firstAttribute="top" secondItem="U19-KW-vfx" secondAttribute="bottom" constant="30" id="8Lw-w1-rBX"/>
+                            <constraint firstItem="xMs-h3-974" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="AyL-7L-4e2"/>
+                            <constraint firstItem="KdD-16-tdd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="Cnm-vJ-Wl8"/>
+                            <constraint firstItem="U19-KW-vfx" firstAttribute="top" secondItem="KdD-16-tdd" secondAttribute="bottom" constant="40" id="DVn-j9-h2z"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pJp-WD-Wyl" secondAttribute="trailing" constant="70" id="EBU-4V-Tp2"/>
+                            <constraint firstItem="50a-z3-6i7" firstAttribute="centerY" secondItem="xLU-YF-9xj" secondAttribute="centerY" id="H0a-kI-eFo"/>
+                            <constraint firstItem="q4A-f7-cgO" firstAttribute="top" secondItem="50a-z3-6i7" secondAttribute="bottom" id="IJ9-iI-1Ne"/>
+                            <constraint firstItem="q4A-f7-cgO" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="KOl-VK-nlc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KdD-16-tdd" secondAttribute="trailing" constant="40" id="KZM-FL-Uo0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="q4A-f7-cgO" secondAttribute="bottom" constant="5" id="Naw-PD-rLb"/>
+                            <constraint firstItem="SpT-vp-tSr" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="RdT-8E-MRy"/>
+                            <constraint firstItem="xLU-YF-9xj" firstAttribute="centerX" secondItem="uau-5U-ISn" secondAttribute="centerX" id="U3T-EL-2w6"/>
+                            <constraint firstItem="KdD-16-tdd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="115" id="g3e-2f-sbV"/>
+                            <constraint firstItem="U19-KW-vfx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mR3-vG-rxv"/>
+                            <constraint firstItem="50a-z3-6i7" firstAttribute="top" secondItem="pJp-WD-Wyl" secondAttribute="bottom" constant="10" id="s6Y-hg-QFb"/>
+                            <constraint firstItem="pJp-WD-Wyl" firstAttribute="centerY" secondItem="uau-5U-ISn" secondAttribute="centerY" id="syD-pU-LfC"/>
+                            <constraint firstItem="xMs-h3-974" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="tCk-wj-XuR"/>
+                            <constraint firstItem="SpT-vp-tSr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="uSK-bF-kqD"/>
+                            <constraint firstItem="uau-5U-ISn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="xVR-RS-P3K"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="animalLabel" destination="xLU-YF-9xj" id="XuR-Wg-0C1"/>
+                        <outlet property="bodyWeightLabel" destination="50a-z3-6i7" id="BoE-pp-2LN"/>
+                        <outlet property="buttonView" destination="U19-KW-vfx" id="Zpo-dp-gf5"/>
+                        <outlet property="pickerView" destination="q4A-f7-cgO" id="tQ9-p6-kfZ"/>
+                        <outlet property="resultLabel" destination="KdD-16-tdd" id="Did-SY-9pd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-62.318840579710148" y="12.723214285714285"/>
+        </scene>
+    </scenes>
+</document>
