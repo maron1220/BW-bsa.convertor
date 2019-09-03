@@ -51,13 +51,13 @@ class ViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDataSour
         var index = bodyWeightList.firstIndex(of:"\(weight)")!
         switch animalLabel.text {
         case animalList[0]:
-            resultLabel.text = canineBsaList[index]
+            resultLabel.text = "\(canineBsaList[index])"+"(m²)"
         case animalList[1]:
             //猫の配列に値が無い時の場合分け
             if index >= felineBsaList.count{
                 resultLabel.text = "＼(^o^)／"
             }else{
-                resultLabel.text = felineBsaList[index]
+                resultLabel.text = "\(felineBsaList[index])"+"(m²)"
             }
         default:
             resultLabel.text = "error"
