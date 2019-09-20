@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import GoogleMobileAds
+
 
 class ViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDataSource {
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
@@ -110,6 +112,10 @@ class ViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDataSour
         bodyWeightLabel.text = bodyWeightList[0]
         
         resultLabel.layer.borderWidth = 1.0
+        
+        bannerView.adUnitID = "ca-app-pub-4439113960692957/7020853128"
+        bannerView.rootViewController = self
+        bannerView.load(GADRequest())
     }
     
     @IBOutlet weak var resultLabel: UILabel!
@@ -120,6 +126,7 @@ class ViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDataSour
     @IBOutlet weak var bodyWeightLabel: UILabel!
     @IBOutlet weak var pickerView: UIPickerView!
     @IBOutlet weak var buttonView: UIButton!
+    @IBOutlet weak var bannerView: GADBannerView!
     
 }
 

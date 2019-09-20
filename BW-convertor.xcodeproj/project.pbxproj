@@ -12,9 +12,12 @@
 		2D89688C231816B900EF65FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D89688A231816B900EF65FC /* Main.storyboard */; };
 		2D89688E231816BC00EF65FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D89688D231816BC00EF65FC /* Assets.xcassets */; };
 		2D896891231816BC00EF65FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D89688F231816BC00EF65FC /* LaunchScreen.storyboard */; };
+		FC1A36B4F31AD1F5C6C460F6 /* Pods_BW_convertor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00CAFCB71CF68CFDB2B62E67 /* Pods_BW_convertor.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		00CAFCB71CF68CFDB2B62E67 /* Pods_BW_convertor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BW_convertor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0161B1C34106561C03F04019 /* Pods-BW-convertor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BW-convertor.debug.xcconfig"; path = "Target Support Files/Pods-BW-convertor/Pods-BW-convertor.debug.xcconfig"; sourceTree = "<group>"; };
 		2D896883231816B900EF65FC /* BW-convertor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BW-convertor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D896886231816B900EF65FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2D896888231816B900EF65FC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		2D89688D231816BC00EF65FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2D896890231816BC00EF65FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2D896892231816BC00EF65FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A021FFF24F698AD1E937E2A8 /* Pods-BW-convertor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BW-convertor.release.xcconfig"; path = "Target Support Files/Pods-BW-convertor/Pods-BW-convertor.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC1A36B4F31AD1F5C6C460F6 /* Pods_BW_convertor.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		28BC2F666354AF076EA7A517 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				00CAFCB71CF68CFDB2B62E67 /* Pods_BW_convertor.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2D89687A231816B900EF65FC = {
 			isa = PBXGroup;
 			children = (
 				2D896885231816B900EF65FC /* BW-convertor */,
 				2D896884231816B900EF65FC /* Products */,
+				73C6784F01B039BE71EDE28A /* Pods */,
+				28BC2F666354AF076EA7A517 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +79,16 @@
 			path = "BW-convertor";
 			sourceTree = "<group>";
 		};
+		73C6784F01B039BE71EDE28A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0161B1C34106561C03F04019 /* Pods-BW-convertor.debug.xcconfig */,
+				A021FFF24F698AD1E937E2A8 /* Pods-BW-convertor.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +96,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D896895231816BC00EF65FC /* Build configuration list for PBXNativeTarget "BW-convertor" */;
 			buildPhases = (
+				7BB5C9077500A74928BD9FFC /* [CP] Check Pods Manifest.lock */,
 				2D89687F231816B900EF65FC /* Sources */,
 				2D896880231816B900EF65FC /* Frameworks */,
 				2D896881231816B900EF65FC /* Resources */,
+				DF21D01D29900BE4179F1ED7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7BB5C9077500A74928BD9FFC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BW-convertor-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF21D01D29900BE4179F1ED7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BW-convertor/Pods-BW-convertor-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BW-convertor/Pods-BW-convertor-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BW-convertor/Pods-BW-convertor-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2D89687F231816B900EF65FC /* Sources */ = {
@@ -280,6 +349,7 @@
 		};
 		2D896896231816BC00EF65FC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0161B1C34106561C03F04019 /* Pods-BW-convertor.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +368,7 @@
 		};
 		2D896897231816BC00EF65FC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A021FFF24F698AD1E937E2A8 /* Pods-BW-convertor.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

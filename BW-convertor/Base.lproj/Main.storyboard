@@ -49,9 +49,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q4A-f7-cgO">
-                                <rect key="frame" x="0.0" y="489" width="414" height="368"/>
-                            </pickerView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="動物種" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uau-5U-ISn">
                                 <rect key="frame" x="70" y="379" width="80" height="50"/>
                                 <constraints>
@@ -100,37 +97,51 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q4A-f7-cgO">
+                                <rect key="frame" x="0.0" y="489" width="414" height="323"/>
+                            </pickerView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OD0-62-rJP" customClass="GADBannerView">
+                                <rect key="frame" x="47" y="812" width="320" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="45b-4y-vtU"/>
+                                    <constraint firstAttribute="height" constant="50" id="Uhu-LW-jvR"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="SpT-vp-tSr" firstAttribute="top" secondItem="xMs-h3-974" secondAttribute="bottom" id="2n8-jE-Q6y"/>
-                            <constraint firstItem="q4A-f7-cgO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="3iY-6F-lXu"/>
+                            <constraint firstItem="OD0-62-rJP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="44e-fl-sv0"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xMs-h3-974" secondAttribute="trailing" id="4Hc-WA-OV6"/>
                             <constraint firstItem="50a-z3-6i7" firstAttribute="centerX" secondItem="pJp-WD-Wyl" secondAttribute="centerX" id="88G-gW-R6R"/>
                             <constraint firstItem="pJp-WD-Wyl" firstAttribute="top" secondItem="U19-KW-vfx" secondAttribute="bottom" constant="30" id="8Lw-w1-rBX"/>
+                            <constraint firstItem="q4A-f7-cgO" firstAttribute="top" secondItem="xLU-YF-9xj" secondAttribute="bottom" id="Ad6-kw-vxA"/>
                             <constraint firstItem="xMs-h3-974" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="AyL-7L-4e2"/>
                             <constraint firstItem="KdD-16-tdd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="Cnm-vJ-Wl8"/>
                             <constraint firstItem="U19-KW-vfx" firstAttribute="top" secondItem="KdD-16-tdd" secondAttribute="bottom" constant="40" id="DVn-j9-h2z"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pJp-WD-Wyl" secondAttribute="trailing" constant="70" id="EBU-4V-Tp2"/>
+                            <constraint firstItem="OD0-62-rJP" firstAttribute="top" secondItem="q4A-f7-cgO" secondAttribute="bottom" id="GIH-Le-Ova"/>
                             <constraint firstItem="50a-z3-6i7" firstAttribute="centerY" secondItem="xLU-YF-9xj" secondAttribute="centerY" id="H0a-kI-eFo"/>
-                            <constraint firstItem="q4A-f7-cgO" firstAttribute="top" secondItem="50a-z3-6i7" secondAttribute="bottom" id="IJ9-iI-1Ne"/>
-                            <constraint firstItem="q4A-f7-cgO" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="KOl-VK-nlc"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KdD-16-tdd" secondAttribute="trailing" constant="40" id="KZM-FL-Uo0"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="q4A-f7-cgO" secondAttribute="bottom" constant="5" id="Naw-PD-rLb"/>
                             <constraint firstItem="SpT-vp-tSr" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="RdT-8E-MRy"/>
                             <constraint firstItem="xLU-YF-9xj" firstAttribute="centerX" secondItem="uau-5U-ISn" secondAttribute="centerX" id="U3T-EL-2w6"/>
                             <constraint firstItem="KdD-16-tdd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="115" id="g3e-2f-sbV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="OD0-62-rJP" secondAttribute="bottom" id="jhr-68-Qp8"/>
                             <constraint firstItem="U19-KW-vfx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mR3-vG-rxv"/>
+                            <constraint firstItem="q4A-f7-cgO" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ndw-UL-1CQ"/>
                             <constraint firstItem="50a-z3-6i7" firstAttribute="top" secondItem="pJp-WD-Wyl" secondAttribute="bottom" constant="10" id="s6Y-hg-QFb"/>
                             <constraint firstItem="pJp-WD-Wyl" firstAttribute="centerY" secondItem="uau-5U-ISn" secondAttribute="centerY" id="syD-pU-LfC"/>
                             <constraint firstItem="xMs-h3-974" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="tCk-wj-XuR"/>
                             <constraint firstItem="SpT-vp-tSr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="uSK-bF-kqD"/>
                             <constraint firstItem="uau-5U-ISn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="xVR-RS-P3K"/>
+                            <constraint firstItem="q4A-f7-cgO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="yNF-DA-dDj"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="animalLabel" destination="xLU-YF-9xj" id="XuR-Wg-0C1"/>
+                        <outlet property="bannerView" destination="OD0-62-rJP" id="c3D-YT-L0S"/>
                         <outlet property="bodyWeightLabel" destination="50a-z3-6i7" id="BoE-pp-2LN"/>
                         <outlet property="buttonView" destination="U19-KW-vfx" id="Zpo-dp-gf5"/>
                         <outlet property="pickerView" destination="q4A-f7-cgO" id="tQ9-p6-kfZ"/>

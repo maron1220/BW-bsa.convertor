@@ -1,0 +1,6 @@
+framework module Pods_BW_convertor {
+  umbrella header "Pods-BW-convertor-umbrella.h"
+
+  export *
+  module * { export * }
+}
